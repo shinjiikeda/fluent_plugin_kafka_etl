@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "fluent_plugin_kafka_etl"
   spec.version       = "0.0.1"
   spec.authors       = ["Shinji Ikeda"]
-  spec.email         = ["ikeda.shinji@dena.jp"]
+  spec.email         = ["gm.ikeda@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
