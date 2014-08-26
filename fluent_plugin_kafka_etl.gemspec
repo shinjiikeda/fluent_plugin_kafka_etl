@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fluent_plugin_kafka_etl/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent_plugin_kafka_etl"
-  spec.version       = FluentPluginKafkaEtl::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["Shinji Ikeda"]
   spec.email         = ["ikeda.shinji@dena.jp"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
