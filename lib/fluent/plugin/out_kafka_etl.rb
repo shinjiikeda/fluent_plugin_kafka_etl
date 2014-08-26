@@ -63,7 +63,7 @@ class Fluent::KafkaETLOutputBuffered < Fluent::BufferedOutput
         t = Time.at(timestamp.to_i)
         date = t.strftime("%Y-%m-%d")
         hour = t.strftime("%H")
-        messages << Poseidon::MessageToSend.new(@topic, timestamp << "\t" << message, "#{tag}/#{date}/#{hour}")
+        messages << Poseidon::MessageToSend.new(@topic, message, "#{tag}/#{date}/#{hour}")
         if messages.size >= 1000
           num_send += messages.size
           producer.send_messages(messages)
